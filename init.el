@@ -5,3 +5,10 @@
 
 ;; No splash screen please ... jeez
 (setq inhibit-startup-message t)
+
+;; define plugins home directory
+(add-to-list 'load-path (expand-file-name "plugins" user-emacs-directory))
+
+;; use C-c to select next match word
+(require 'mark-more-like-this)
+(global-set-key (kbd "C-c C-c") 'mark-next-like-this)
