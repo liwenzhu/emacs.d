@@ -12,3 +12,5 @@
 ;; use C-c to select next match word
 (require 'mark-more-like-this)
 (global-set-key (kbd "C-c C-c") 'mark-next-like-this)
+
+(global-set-key (kbd "C-c y") 'yas-global-mode)

@@ -13,3 +13,4 @@ KeyBindings
 -----------
 
 C-c C-c  mark next work like current word, then you can change them together.
+C-c y    change to yas-global-mode
