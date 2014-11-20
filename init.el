@@ -14,3 +14,15 @@
 (global-set-key (kbd "C-c C-c") 'mark-next-like-this)
 
 (global-set-key (kbd "C-c y") 'yas-global-mode)
+
+;; use C-= expand region
+(require 'expand-region)
+(global-set-key (kbd "C-c =") 'er/expand-region)
+
+;; add association of .m file with octave-mode
+(setq auto-mode-alist
+      (cons
+       '("\\.m$" . octave-mode)
+       auto-mode-alist))
+
+
