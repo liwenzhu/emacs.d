@@ -25,4 +25,5 @@
        '("\\.m$" . octave-mode)
        auto-mode-alist))
 
-
+;; disable the backup files end with ~
+(setq make-backup-files nil)
