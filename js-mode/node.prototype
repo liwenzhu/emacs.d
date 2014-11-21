@@ -3,6 +3,6 @@
 # key: pro
 # --
 
-$1.prototype.$2 = function ($3) {
+${Class}.prototype.$2 = function ($3) {
 $0
 };

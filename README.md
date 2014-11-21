@@ -9,6 +9,14 @@ Installation
 M-x package-install then input yasnippet.
 put js-mode into snippets
 
+Preinstall by Package-install
+-----------------------------
+
+auto-complete
+yasnippet
+node-repl
+
+
 KeyBindings
 -----------
 
