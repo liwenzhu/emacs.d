@@ -3,23 +3,11 @@ emacs.d
 
 My personal emacs configures
 
-Installation
-------------
-
-M-x package-install then input yasnippet.
-put js-mode into snippets
-
-Preinstall by Package-install
------------------------------
-
-auto-complete
-yasnippet
-node-repl
-
-
 KeyBindings
 -----------
 
-C-c C-c  mark next work like current word, then you can change them together.
-C-c y    change to yas-global-mode
-C-c =	 expand region
+C-c y	enable snippets.
+C-c a	enable auto-complete.
+C-c C-n mark next work as selected and enable multiple cursors.
+C-c =	expand region.
+

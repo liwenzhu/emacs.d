@@ -9,6 +9,7 @@
 (global-set-key (kbd "C-c y") 'yas-global-mode)
 (global-set-key (kbd "C-c a") 'auto-complete-mode)
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c =") 'er/expand-region)
 
 ;; use C-= expand region
 ;;(require 'expand-region)
