@@ -6,18 +6,13 @@
 ;; No splash screen please ... jeez
 (setq inhibit-startup-message t)
 
-;; define plugins home directory
-(add-to-list 'load-path (expand-file-name "plugins" user-emacs-directory))
-
-;; use C-c to select next match word
-(require 'mark-more-like-this)
-(global-set-key (kbd "C-c C-c") 'mark-next-like-this)
-
 (global-set-key (kbd "C-c y") 'yas-global-mode)
+(global-set-key (kbd "C-c a") 'auto-complete-mode)
+(global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
 
 ;; use C-= expand region
-(require 'expand-region)
-(global-set-key (kbd "C-c =") 'er/expand-region)
+;;(require 'expand-region)
+;;(global-set-key (kbd "C-c =") 'er/expand-region)
 
 ;; add association of .m file with octave-mode
 (setq auto-mode-alist
@@ -27,3 +22,9 @@
 
 ;; disable the backup files end with ~
 (setq make-backup-files nil)
+
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+    )
