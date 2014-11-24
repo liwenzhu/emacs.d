@@ -11,10 +11,6 @@
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c =") 'er/expand-region)
 
-;; use C-= expand region
-;;(require 'expand-region)
-;;(global-set-key (kbd "C-c =") 'er/expand-region)
-
 ;; add association of .m file with octave-mode
 (setq auto-mode-alist
       (cons
