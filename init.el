@@ -41,3 +41,8 @@
   (package-initialize)
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
     )
+
+;; add hooks
+;; add hook after js-mode highlight after 81 column
+(add-hook 'js-mode-hook
+	  (lambda () (highlight-lines-matching-regexp ".\\{81\\}" "hi-yellow")))
