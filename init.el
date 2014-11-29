@@ -27,6 +27,9 @@
 ;; show line number on the left
 (global-linum-mode t)
 
+;; open ido-mode interaction of do
+(ido-mode t)
+
 ;; set yas-global-mode default
 (add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-20141117.327")
 (require 'yasnippet)
