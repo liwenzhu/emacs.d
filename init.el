@@ -52,3 +52,7 @@
 ;; add hook after js-mode highlight after 81 column
 (add-hook 'js-mode-hook
 	  (lambda () (highlight-lines-matching-regexp ".\\{81\\}" "hi-yellow")))
+
+;; rss feed list
+(setq elfeed-feeds
+      '("https://news.ycombinator.com/rss"))
