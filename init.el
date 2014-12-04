@@ -57,3 +57,7 @@
 (setq elfeed-feeds
       '("https://news.ycombinator.com/rss"))
 
+;; define a function for insert star comments
+(defun insert-doc-comment () (interactive)
+       (insert "/**\n * Brief description. \n * @param \n * @return \n */"))
+(global-set-key (kbd "C-c C-d") 'insert-doc-comment)
