@@ -59,5 +59,11 @@
 
 ;; define a function for insert star comments
 (defun insert-doc-comment () (interactive)
-       (insert "/**\n * Brief description. \n * @param \n * @return \n */"))
+       (insert
+	"/**\n"
+	" * Brief description. \n"
+	" * @param \n"
+	" * @return \n"
+	" * @author Vince<lee.wenzhu@gmail.com> \n"
+	" */ \n"))
 (global-set-key (kbd "C-c C-d") 'insert-doc-comment)
