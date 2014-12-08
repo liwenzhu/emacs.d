@@ -30,6 +30,9 @@
 ;; open ido-mode interaction of do
 (ido-mode t)
 
+;; hightlight matching parentheses
+(show-paren-mode 1)
+
 ;; set yas-global-mode default
 (add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-20141117.327")
 (require 'yasnippet)
