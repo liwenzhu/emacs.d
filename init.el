@@ -13,13 +13,13 @@
 (global-set-key (kbd "C-c C-l") 'goto-line)
 
 ;; add js2-refactor
-(js2r-add-keybindings-with-prefix "C-c C-m")
+(add-hook 'js2-mode-hook (lambda () (js2r-add-keybindings-with-prefix "C-c C-m")))
 
-;; add association of .m file with octave-mode
-(setq auto-mode-alist
-      (cons
-       '("\\.m$" . octave-mode)
-       auto-mode-alist))
+;; use octave-mode as master mode for .m files
+(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
+
+;; use js2-mode as master mode for .js files
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
 ;; disable the backup files end with ~
 (setq make-backup-files nil)
