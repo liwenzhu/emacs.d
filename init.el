@@ -12,6 +12,9 @@
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c C-l") 'goto-line)
 
+;; add js2-refactor
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
 ;; add association of .m file with octave-mode
 (setq auto-mode-alist
       (cons
