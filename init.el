@@ -21,6 +21,13 @@
 ;; use js2-mode as master mode for .js files
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
+;; use markdown mode for markdown files
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 ;; disable the backup files end with ~
 (setq make-backup-files nil)
 
