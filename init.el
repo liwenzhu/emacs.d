@@ -21,6 +21,9 @@
 ;; use js2-mode as master mode for .js files
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 
+;; use html-mode as master mode for .ejs files
+(add-to-list 'auto-mode-alist '("\\.ejs\\'" . html-mode))
+
 ;; use markdown mode for markdown files
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
