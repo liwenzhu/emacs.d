@@ -12,6 +12,11 @@
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c C-l") 'goto-line)
 
+;; set insert tab as default for indent
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+
 ;; add js2-refactor
 (add-hook 'js2-mode-hook (lambda () (js2r-add-keybindings-with-prefix "C-c C-m")))
 
