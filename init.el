@@ -23,8 +23,8 @@
 ;; use octave-mode as master mode for .m files
 (add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
 
-;; use js2-mode as master mode for .js files
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; use js-mode as master mode for .js files
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js-mode))
 
 ;; use html-mode as master mode for .ejs files
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . html-mode))
