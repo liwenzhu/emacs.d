@@ -13,7 +13,7 @@
 (global-set-key (kbd "C-c C-l") 'goto-line)
 
 ;; set insert tab as default for indent
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
 

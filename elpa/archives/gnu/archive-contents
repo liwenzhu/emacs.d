@@ -71,7 +71,7 @@
 	       ((:url . "http://github.com/defunkt/coffee-mode")
 		(:keywords "coffeescript" "major" "mode"))])
  (company .
-	  [(0 8 7)
+	  [(0 8 8)
 	   ((emacs
 	     (24 1))
 	    (cl-lib
@@ -113,7 +113,7 @@
 	     ((:url . "http://www.dr-qubit.org/emacs.php")
 	      (:keywords "extensions" "matching" "data structures trie" "tree" "dictionary" "completion" "regexp"))])
  (diff-hl .
-	  [(1 6 0)
+	  [(1 7 0)
 	   ((cl-lib
 	     (0 2)))
 	   "Highlight uncommitted changes" tar
@@ -300,7 +300,7 @@
 	((:keywords "hypermedia")
 	 (:url . "http://mwolson.org/projects/EmacsMuse.html"))])
  (names .
-	[(20141119)
+	[(20150115 1)
 	 ((emacs
 	   (24 1))
 	  (cl-lib
@@ -338,7 +338,7 @@
 	    ((:url . "http://elpa.gnu.org/packages/omn-mode.html")
 	     (:keywords))])
  (org .
-      [(20141222)
+      [(20150112)
        nil "Outline-based notes management and organizer" tar nil])
  (osc .
       [(0 1)
@@ -385,6 +385,11 @@
 		  nil "restore original position after scrolling" single
 		  ((:url . "http://elpa.gnu.org/packages/scroll-restore.html")
 		   (:keywords "scrolling"))])
+ (seq .
+      [(1 0)
+       nil "Sequence manipulation functions" single
+       ((:url . "http://elpa.gnu.org/packages/seq.html")
+	(:keywords "sequences"))])
  (shen-mode .
 	    [(0 1)
 	     nil "A major mode for editing shen source code" tar
@@ -452,7 +457,7 @@
 		   nil "Unicode confusables table" tar
 		   ((:url . "http://elpa.gnu.org/packages/uni-confusables.html"))])
  (vlf .
-      [(1 6)
+      [(1 7)
        nil "View Large Files" tar
        ((:keywords "large files" "utilities")
 	(:url . "https://github.com/m00natic/vlfi"))])
