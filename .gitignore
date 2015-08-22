@@ -1,2 +1,6 @@
 auto-save-list
 ac-comphist.dat
+elpa/
+ido.last
+.session
+.smex-items
