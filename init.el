@@ -1,4 +1,5 @@
 (menu-bar-mode -1)
+(global-auto-complete-mode t)
 (ido-mode 1)
 
 (setq-default tab-width 4)
