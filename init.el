@@ -1,5 +1,4 @@
 (menu-bar-mode -1)
-(global-auto-complete-mode t)
 (ido-mode 1)
 
 (setq-default tab-width 4)
@@ -7,6 +6,9 @@
 (setq-default indent-tabs-mode t)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+
+(package-initialize)
+(global-auto-complete-mode t)
 
 (global-set-key (kbd "C-c C-w") 'whitespace-mode)
 
