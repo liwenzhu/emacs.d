@@ -1,7 +1,7 @@
 emacs.d
 =======
 
-My personal emacs configures
+My personal emacs configures, this repo is deprecated.
 
 Installation
 ------------
